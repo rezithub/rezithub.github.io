@@ -1,8 +1,93 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.container{
+.container {
     width: 85%;
     margin: 0 auto;
+}
+nav {
+    position: relative;
+}
+.nav-left-part {
+    font-size: 30px;
+}
+.nav-left-part h3 {
+    color: #fff;
+}
+.nav-left-part span {
+    color: green;
+}
+.nav-right-part{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-right-part a{
+    color: gray;
+    display: inline-block;
+    margin: 15px 20px;
+}
+.nav-right-part a:hover{
+    color: blue;
+    transition-duration: 0.5s;
+    margin-bottom: 3px;
+    border-bottom: 2px solid;
+}
+.nav-parts {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 192, 203);
+    border-radius: 10px;
+    margin: 30px 0;
+    padding: 10px 0;
+    opacity: 0.7;
+}
+a {
+    text-decoration: none;
+}
+body {
+    /* background-image: url(../imgs/background.jpg); */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+.text-desc {
+    font-size: 60px;
+    width: 50%;
+    color: #fff;
+}
+.main-links a{
+    padding: 10px 23px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.projects-link{
+    background-color: green;
+    color: black;
+    box-shadow: 0px 0px 6px 5px rgba(17,107,18,0.61);
+}
+.resume-link {
+    margin-left: 15px;
+    color: blue;
+    border: 3px solid;
+}
+.main-top {
+    margin: 40px 0;
+}
+.main-links {
+    margin: 40px 0;
+}
+h4{
+    font-size: 20px;
+    color: #fff;
+}
+.about-info{
+    display: flex;
+}
+.about-desc{
+    width:25%;
+    color: gray;
+    margin-top: 20px;
 }
