@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .container {
     width: 85%;
@@ -16,28 +17,29 @@ nav {
     color: #fff;
 }
 .nav-left-part span {
-    color: green;
+    color: #2dd4bf;
 }
-.nav-right-part{
+.nav-right-part {
     font-size: 20px;
     display: flex;
     justify-content: space-around;
 }
-.nav-right-part a{
-    color: gray;
+.nav-right-part a {
+    border-bottom: 2px solid transparent;
+    color: #94a3b8;
     display: inline-block;
     margin: 15px 20px;
 }
-.nav-right-part a:hover{
-    color: blue;
+.nav-right-part a:hover {
+    color: #388ef8;
     transition-duration: 0.5s;
     margin-bottom: 3px;
     border-bottom: 2px solid;
 }
 .nav-parts {
+    background-color: rgba(30, 41, 59, 0.7);
     display: flex;
     justify-content: space-between;
-    background-color: rgb(255, 192, 203);
     border-radius: 10px;
     margin: 30px 0;
     padding: 10px 0;
@@ -47,31 +49,45 @@ a {
     text-decoration: none;
 }
 body {
-    /* background-image: url(../imgs/background.jpg); */
-    background-color: black;
+    background-image: url(../imgs/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px;
+    background-position: center;
+    min-height: 100vh;
 }
 .text-desc {
     font-size: 60px;
     width: 50%;
     color: #fff;
 }
-.main-links a{
-    padding: 10px 23px;
+.main-links a {
     border-radius: 10px;
     font-size: 20px;
 }
-.projects-link{
-    background-color: green;
+.main-text span {
+    color: #2dd4bf;
+}
+.projects-link {
+    background-color: #00f58d;
     color: black;
-    box-shadow: 0px 0px 6px 5px rgba(17,107,18,0.61);
+    box-shadow: 0px 0px 6px 5px rgba(17, 107, 18, 0.61);
+    padding: 12px 23px;
+}
+.projects-link:hover {
+    transition-duration: 0.5s;
+    background-color: #00f58f9e;
+    color: rgb(105, 96, 96);
 }
 .resume-link {
+    padding: 10px 23px;
     margin-left: 15px;
-    color: blue;
+    color: #628cff;
     border: 3px solid;
+    box-shadow: 0px 0px 6px 5px rgba(17, 37, 107, 0.61);
+}
+.resume-link:hover {
+    transition-duration: 0.5s;
+    background-color: #1d4fd869;
 }
 .main-top {
     margin: 40px 0;
@@ -79,15 +95,16 @@ body {
 .main-links {
     margin: 40px 0;
 }
-h4{
+h4 {
     font-size: 20px;
     color: #fff;
 }
-.about-info{
+.about-info {
     display: flex;
 }
-.about-desc{
-    width:25%;
+.about-desc {
+    width: 50%;
     color: gray;
     margin-top: 20px;
+    text-transform: capitalize;
 }
