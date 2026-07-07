@@ -26,7 +26,8 @@ nav {
 }
 .nav-left-part h3 {
     color: #fff;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
+    font-family: Lobster;
 }
 .nav-left-part span {
     color: #2dd4bf;
@@ -39,6 +40,7 @@ nav {
     font-size: 20px;
     display: flex;
     justify-content: space-around;
+    font-family: Syne Mono;
 }
 .nav-right-part a {
     border-bottom: 2px solid transparent;
@@ -64,10 +66,11 @@ nav {
 /* end nav */
 /* start main */
 .text-desc {
-    font-size: 60px;
+    font-size: 3em;
     width: 70%;
     color: #fff;
     letter-spacing: 0.1em;
+    font-family: Playpen Sans Hebrew;
 }
 .text-desc::selection {
     color: #2dd4bf;
@@ -75,6 +78,7 @@ nav {
 .main-links a {
     border-radius: 10px;
     font-size: 20px;
+    font-family: Yeon Sung;
     letter-spacing: 0.1em;
 }
 .main-text span {
@@ -112,6 +116,7 @@ h4 {
     font-size: 20px;
     color: #fff;
     letter-spacing: 0.3em;
+    font-family: Tourney;
 }
 .main-below{
     margin-top: 60px;
@@ -125,5 +130,6 @@ h4 {
     margin-top: 20px;
     text-transform: capitalize;
     font-size: 20px;
+    font-family: Buda;
 }
 /* end main */
