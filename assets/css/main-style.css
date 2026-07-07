@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-image: url(../imgs/background.jpg);
     background-repeat: no-repeat;
@@ -10,61 +11,71 @@ body {
     background-position: center;
     min-height: 95.8vh;
 }
+
 .container {
     width: 85%;
     margin: 0 auto;
 }
+
 a {
     text-decoration: none;
 }
-/* start nav */
+
 nav {
     position: relative;
 }
+
 .nav-left-part {
     font-size: 30px;
 }
+
 .nav-left-part h3 {
     color: #fff;
     letter-spacing: 0.2em;
     font-family: Lobster;
 }
+
 .nav-left-part span {
     color: #2dd4bf;
 }
+
 .nav-left-part h3::selection {
     color: #00f58d;
     background-color: #388ef8;
 }
+
 .nav-right-part {
     font-size: 20px;
     display: flex;
     justify-content: space-around;
     font-family: Syne Mono;
 }
+
 .nav-right-part a {
     border-bottom: 2px solid transparent;
     color: #94a3b8;
     display: inline-block;
     margin: 15px 20px;
 }
+
 .nav-right-part a:hover {
     color: #388ef8;
     transition-duration: 0.5s;
     margin-bottom: 3px;
     border-bottom: 2px solid;
 }
+
 .nav-parts {
     background-color: rgba(30, 41, 59, 0.7);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-radius: 10px;
     margin: 30px 0;
-    padding: 10px 0;
+    padding: 10px 20px;
     opacity: 0.7;
 }
-/* end nav */
-/* start main */
+
 .text-desc {
     font-size: 3em;
     width: 70%;
@@ -72,29 +83,35 @@ nav {
     letter-spacing: 0.1em;
     font-family: Playpen Sans Hebrew;
 }
+
 .text-desc::selection {
     color: #2dd4bf;
 }
+
 .main-links a {
     border-radius: 10px;
     font-size: 20px;
     font-family: Yeon Sung;
     letter-spacing: 0.1em;
 }
+
 .main-text span {
     color: #2dd4bf;
 }
+
 .projects-link {
     background-color: #00f58d;
     color: black;
     box-shadow: 0px 0px 6px 5px rgba(17, 107, 18, 0.61);
     padding: 12px 23px;
 }
+
 .projects-link:hover {
     transition-duration: 0.5s;
     background-color: #00f58f9e;
     color: rgb(105, 96, 96);
 }
+
 .resume-link {
     padding: 10px 23px;
     margin-left: 15px;
@@ -102,28 +119,35 @@ nav {
     border: 3px solid;
     box-shadow: 0px 0px 6px 5px rgba(17, 37, 107, 0.61);
 }
+
 .resume-link:hover {
     transition-duration: 0.5s;
     background-color: #1d4fd869;
 }
+
 .main-top {
     margin: 60px 0;
 }
+
 .main-links {
     margin: 40px 0;
 }
+
 h4 {
     font-size: 20px;
     color: #fff;
     letter-spacing: 0.3em;
     font-family: Tourney;
 }
-.main-below{
+
+.main-below {
     margin-top: 60px;
 }
+
 .about-info {
     display: flex;
 }
+
 .about-desc {
     width: 50%;
     color: rgb(212, 212, 212);
@@ -132,4 +156,80 @@ h4 {
     font-size: 20px;
     font-family: Buda;
 }
-/* end main */
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav-parts {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .nav-right-part {
+        margin-top: 15px;
+    }
+
+    .nav-right-part a {
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    .text-desc {
+        font-size: 2.2em;
+        width: 100%;
+    }
+
+    .about-desc {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-left-part {
+        font-size: 24px;
+    }
+
+    .nav-right-part {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-right-part a {
+        margin: 5px 0;
+    }
+
+    .text-desc {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .main-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .resume-link {
+        margin-left: 0;
+    }
+
+    .about-desc {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .main-below {
+        text-align: center;
+    }
+}
