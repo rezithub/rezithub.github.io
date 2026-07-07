@@ -1,2 +1,2 @@
-# personal-site
-i want to develop my personal website in this repository.
+# Reza Mohammadi's Personal WebPage
+i want to develop my personal webpage in this repository.
