@@ -1,2 +1,3 @@
 # Reza Mohammadi's Personal WebPage
-i want to develop my personal webpage in this repository.
+Developing My Personal WebPage In This Repository.
+I want to develop it alongside learning about web developing; so, I will update it whenever I learn something new.
