@@ -1,3 +1,4 @@
+/* start global */
 * {
     margin: 0;
     padding: 0;
@@ -11,16 +12,15 @@ body {
     background-position: center;
     min-height: 95.8vh;
 }
-
 .container {
     width: 85%;
     margin: 0 auto;
 }
-
 a {
     text-decoration: none;
 }
-
+/* end global */
+/* start nav */
 nav {
     position: relative;
 }
@@ -76,6 +76,9 @@ nav {
     opacity: 0.7;
 }
 
+/* end nav */
+
+/* start main */
 .text-desc {
     font-size: 3em;
     width: 70%;
@@ -156,7 +159,9 @@ h4 {
     font-size: 20px;
     font-family: Buda;
 }
+/* end main */
 
+/* start responsive */
 @media (max-width: 768px) {
     .container {
         width: 90%;
@@ -233,3 +238,4 @@ h4 {
         text-align: center;
     }
 }
+/* end responsive */
